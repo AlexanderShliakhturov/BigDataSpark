@@ -1,10 +1,6 @@
 from pyspark.sql import SparkSession, functions as F
 from pyspark.sql.window import Window
 
-# docker exec -it spark-master spark-submit `
-# --master spark://spark-master:7077 --jars /opt/spark/jars/postgresql-42.6.0.jar `
-# --packages org.mongodb.spark:mongo-spark-connector_2.12:10.2.1 `
-# /opt/spark-apps/reports_mongodb.py
 spark = (
     SparkSession.builder
         .appName("MongoDBReports")

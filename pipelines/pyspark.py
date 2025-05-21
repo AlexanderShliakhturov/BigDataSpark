@@ -2,9 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, row_number, expr
 from pyspark.sql.window import Window
 
-# docker exec -it spark-master spark-submit `
-# --master spark://spark-master:7077 --deploy-mode client `
-# --jars /opt/spark/jars/postgresql-42.6.0.jar /opt/spark-apps/etl_to_star.py  
+
 spark = (
     SparkSession.builder
     .appName("ETL to Star Schema")

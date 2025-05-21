@@ -1,12 +1,7 @@
 from pyspark.sql import SparkSession, functions as F
 from pyspark.sql.window import Window
 
-# docker exec -it spark-master spark-submit `
-# --master spark://spark-master:7077 --deploy-mode `
-# client --jars "/opt/spark/jars/postgresql-42.6.0.jar,`
-# /opt/spark/jars/clickhouse-jdbc-0.4.6.jar" `
-# --driver-class-path "/opt/spark/jars/postgresql-42.6.0.jar:/opt/spark/jars/clickhouse-jdbc-0.4.6.jar" `
-# /opt/spark-apps/reports_clickhouse.py
+
 spark = (
     SparkSession
     .builder

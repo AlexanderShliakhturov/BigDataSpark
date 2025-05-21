@@ -1,7 +1,3 @@
-#docker exec spark-master spark-submit `
-# --master spark://spark-master:7077 --deploy-mode client `
-# --jars "/opt/spark/jars/postgresql-42.6.0.jar,/opt/spark/jars/spark-cassandra-connector-assembly_2.12-3.1.0.jar" `
-# --conf spark.cassandra.connection.host=cassandra /opt/spark-apps/reports_cassandra.py
 
 from cassandra.cluster import Cluster
 
